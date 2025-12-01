@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<form action="/invoice" method="POST" id="invoiceForm" target="_blank" style="display:flex; flex-direction:column; gap:15px;">
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invoice App</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <div
+      style="
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+      "
+    >
+      <h1 style="text-align: center; color: #333; margin-bottom: 30px">
+        Invoice Generator
+      </h1>
+      <form
+        action="/invoice"
+        method="POST"
+        style="display: flex; flex-direction: column; gap: 15px"
+      >
+        <input
+          type="text"
+          name="customer"
+          placeholder="Customer Name"
+          style="
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+          "
+        />
+        <input
+          type="text"
+          name="item"
+          placeholder="Item Name"
+          style="
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+          "
+        />
+        <input
+          type="number"
+          name="price"
+          placeholder="Price"
+          style="
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+          "
+        />
+        <button
+          type="submit"
+          style="
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+          "
+        >
+          Generate Invoice
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
